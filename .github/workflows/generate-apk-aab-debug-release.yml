@@ -40,8 +40,8 @@ jobs:
           cache: 'gradle'
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
-      - name: list dir contents
-        run: ls
+      - name: Gen gwrapper
+        run: gradle wrapper
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
 
